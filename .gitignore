@@ -1,0 +1,36 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# --- Dữ liệu (Data Engineering xử lý file nặng, đừng up lên Git) ---
+*.csv
+*.parquet
+*.csv.gz
+data/
+
+# Bỏ qua thư mục data của Postgres (quan trọng)
+**/ny_taxi_postgres_data/
+
+# --- Cấu hình môi trường & Mật khẩu ---
+.env
+*.env
+
+# --- Terraform (Rất quan trọng) ---
+# File này chứa thông tin hạ tầng thực tế, tuyệt đối không up
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# --- Google Cloud ---
+# File JSON chứa key service account (nguy hiểm nhất)
+*.json
+gcp-key.json
+google_credentials.json
+
+# --- IDE ---
+.vscode/
+.idea/
+
+command
