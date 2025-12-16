@@ -1,11 +1,11 @@
 variable "credentials" {
   description = "Path to GCP credentials JSON file"
-  default = "/path/to/credentials.json"
+  default = "./keys/my-creds.json"
 }
 
 variable "project" {
   description = "GCP Project ID"
-  default = "my-project-id" 
+  default = "terraform-demo-479204" 
 }
 
 variable "region" {
@@ -30,5 +30,5 @@ variable "location" {
 
 variable "gcs_bucket_name" {
   description = "My Storage Bucket Name"
-  default = "my-project-id-terraform-bucket"
+  default = "terraform-demo-479204-terraform-bucket"
 }
