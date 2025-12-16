@@ -19,6 +19,7 @@ data/
 *.tfstate
 *.tfstate.backup
 .terraform/
+.terraform.lock.hcl
 
 # --- Google Cloud ---
 # File JSON chứa key service account
